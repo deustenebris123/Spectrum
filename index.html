@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spectrum Kuasü</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>Spectrum Kuasü</h1>
+        <ul>
+            <li><a href="#seccion3">Miembros</a></li>
+            <li><a href="#seccion2">Objetivos</a></li>
+            <li><a href="#seccion1">Antecedentes</a></li> 
+            <li><a href="#seccion4">Justificación</a></li> 
+            <li><a href="#seccion5">Resultados esperados</a></li>
+            <li><a href="#seccion6">Repositorio</a></li>   
+        </ul>
+    </header>
+    <img id="s1img3" src="wp3172285.jpg" alt=""> 
+    <nav>
+        <img id="nav-img" src="greg-rakozy-oMpAz-DN-9I-unsplash.jpg" alt="img1">
+    </nav>
+
+    <main>
+        
+        <div id="seccion1">
+            <div id="sub1">
+                <p id="p1">Conoce todo</p>
+                <h2> Sobre el proyecto </h2>
+                <p> La espectroscopia es una técnica fundamental en la investigación astronómica que permite analizar la composición química de objetos celestes, como estrellas. En este proyecto, se utilizarán técnicas espectroscópicas para analizar el espectro de emisión de una estrella y determinar su composición química, concentración de elementos y presencia de anomalías estelares. Además, se evidenciará la nucleosíntesis estelar, proceso mediante el cual se forman elementos químicos más pesados a partir de la fusión nuclear en el interior de las estrellas. </p>
+            </div>
+            <img id="s1img1" src="800px-High_Resolution_Solar_Spectrum-678x381.jpg" alt="">
+        </div>
+
+        <div id="seccion2">
+            
+            
+        </div>
+        <div id="seccion3">
+            <div id="sub2">
+                <h3> Objetivos del proyecto </h3>
+            </div> 
+            <div id="sub3">   
+                <p> General: Realizar un catálogo espectral haciendo uso de técnicas espectroscópicas mediante la aplicación de conocimientos en ciencias experimentales y naturales a nivel de investigación universitaria.  
+                </p>
+                <p1>
+                    Específicos: Poner en uso los equipos de investigación del observatorio astronómico de la universidad Distrital Francisco José de Caldas sede Aduanilla de Paiba destinados para la comunidad estudiantil.  
+                </p1>
+            </div>
+            
+        </div>
+
+        <div id="seccion4">
+            
+        </div>
+
+        <div id="seccion5">
+        </div>
+
+        <div id="seccion6">
+        </div>
+        <div id="seccion7">
+            
+         </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        var header = document.getElementById("main-header");
+        var navImg = document.getElementById("nav-img");
+
+        window.addEventListener("scroll", function() {
+            var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Invierte la dirección de la transformación para que la imagen suba al hacer scroll hacia abajo
+            navImg.style.transform = "translateY(" + (-scrolled * 0.8) + "px)";
+
+            if (scrolled > 0) {
+                header.classList.add("abajo");
+            } else {
+                header.classList.remove("abajo");
+            }
+        });
+    </script>
+</body>
+</html>
+
